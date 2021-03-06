@@ -1,9 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
-
 import { HttpClientModule } from '@angular/common/http';
-
 import { MatCardModule } from '@angular/material/card';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -14,6 +12,7 @@ import { FactsDetailsComponent } from './facts-details/facts-details.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FactAdderComponent } from './fact-adder/fact-adder.component';
 import { FactNavComponent } from './fact-nav/fact-nav.component';
+import { FactAllComponent } from './fact-all/fact-all.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +20,8 @@ import { FactNavComponent } from './fact-nav/fact-nav.component';
     FactComponent,
     FactsDetailsComponent,
     FactAdderComponent,
-    FactNavComponent
+    FactNavComponent,
+    FactAllComponent
   ],
   imports: [
     BrowserModule,
