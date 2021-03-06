@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { FactsDetailsComponent } from './facts-details.component';
+import { FactNavComponent } from './fact-nav.component';
 
-describe('FactsDetailsComponent', () => {
-  let component: FactsDetailsComponent;
-  let fixture: ComponentFixture<FactsDetailsComponent>;
+describe('FactNavComponent', () => {
+  let component: FactNavComponent;
+  let fixture: ComponentFixture<FactNavComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ FactsDetailsComponent ]
+      declarations: [ FactNavComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(FactsDetailsComponent);
+    fixture = TestBed.createComponent(FactNavComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

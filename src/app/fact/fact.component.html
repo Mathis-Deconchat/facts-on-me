@@ -3,8 +3,11 @@
         <p>{{fact.content}}</p>
     </mat-card>
 
-    <button id='btn-get-random' (click)="getRandom(); newClick()">Press me baby</button>
+    <a class="btn btn-primary mt-4 mb-2" href='#' id='btn-get-random' (click)="getRandom(); newClick()">Press me
+        baby</a>
     <p>Compteur <span>{{clicks}}</span></p>
+
+    <app-fact-adder></app-fact-adder>
 
 </div>
 <!-- *ngIf='fact.content'-->

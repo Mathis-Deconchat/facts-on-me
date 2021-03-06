@@ -13,9 +13,14 @@ export class FactsFetcherService {
 
   constructor(private http: HttpClient) { }
 
-  private url = "http://localhost:6969/random";
+  private url = "http://localhost:6969";
 
   getRandomFact(): Observable<Fact | undefined> {
-    return this.http.get<Fact>(this.url)
+    return this.http.get<Fact>(this.url + '/random')
+  }
+
+  postfact(content: string): Observable<number | undefined> {
+    return this.http.post<any>(this.url, { "content": content })
+
   }
 }
