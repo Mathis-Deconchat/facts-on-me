@@ -1,2 +1,10 @@
-<p>fact works!</p>
-<mat-card>Simple card</mat-card>
+<div class="container">
+    <mat-card *ngIf='fact' id='card-fact-unique'>
+        <p>{{fact.content}}</p>
+    </mat-card>
+
+    <button id='btn-get-random' (click)="getRandom(); newClick()">Press me baby</button>
+    <p>Compteur <span>{{clicks}}</span></p>
+
+</div>
+<!-- *ngIf='fact.content'-->

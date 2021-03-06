@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { FactsFetcherService } from '../facts-fetcher.service';
+import { Fact } from '../fact';
 
 
 
@@ -9,9 +11,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FactComponent implements OnInit {
 
-  constructor() { }
+  constructor(private FactsFetcherService: FactsFetcherService) { }
+
+  fact?: Fact
 
   ngOnInit(): void {
+    this.getRandom();
+
+  }
+  clicks = 0;
+
+  getRandom() {
+    this.FactsFetcherService.getRandomFact()
+      .subscribe(f => {
+        this.fact = f;
+      })
+  }
+
+  newClick() {
+    this.clicks = this.clicks + 1;
   }
 
 }
