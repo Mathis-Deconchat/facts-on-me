@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FactsFetcherService } from '../facts-fetcher.service';
 import { Fact } from '../fact';
-import { FactAdderComponent } from '../fact-adder/fact-adder.component'
+
 
 
 

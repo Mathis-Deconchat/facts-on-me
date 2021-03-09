@@ -1,0 +1,44 @@
+.content{
+    margin: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+}
+.fact-display{
+    border-radius: 50px;
+    background: #ffffff;
+    box-shadow:  20px 20px 60px #bebebe,
+             -20px -20px 60px #ffffff;
+    width: 60%;
+    height: 50%;
+}
+
+.fact-font{
+    font-size: xx-large;
+}
+
+.card {
+    display: flex;
+    background: linear-gradient(
+      to left top,
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.5)
+    );
+    border-radius: 1rem;
+    margin: 2rem 0rem;
+    padding: 2rem;
+    box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.212);
+    justify-content: center;
+  }
+
+  .btn-neo{
+    text-decoration: none;
+    background: #e0e0e0;
+    box-shadow: inset 20px 20px 60px #bebebe,
+            inset -20px -20px 60px #ffffff;
+    margin: 2rem 0rem;
+    padding: 2rem;
+    border-radius: 1.5rem;
+  }

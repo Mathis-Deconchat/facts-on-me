@@ -1,13 +1,15 @@
-<div class="container">
-    <mat-card *ngIf='fact' id='card-fact-unique'>
-        <p>{{fact.content}}</p>
-    </mat-card>
+<div class="content">
+    <div class="card" *ngIf='fact' id='card-fact-unique'>
+        <p class="fact-font">{{fact?.content}}</p>
+    </div>
 
-    <a class="btn btn-primary mt-4 mb-2" id='btn-get-random' (click)="getRandom(); newClick()">Press me
-        baby</a>
+    <button mat-raised-button color="accent" id='btn-get-random' (click)="getRandom(); newClick()">Press me
+        baby</button>
+
     <p>Compteur <span>{{clicks}}</span></p>
-
-    <app-fact-adder></app-fact-adder>
-
 </div>
+
+
+
+
 <!-- *ngIf='fact.content'-->
