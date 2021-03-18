@@ -1,0 +1,28 @@
+.new-fact-input{
+    width: 500px;
+    height: 100px;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.3fr 1.1fr 0.5fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      ". . ."
+      ". txtzone ."
+      ". button ."
+      ". message .";
+  }
+
+  .btn{
+      grid-area: button;
+  }
+
+  .new-fact-input{
+      grid-area: txtzone;
+  }
+
+  .response{
+      grid-area: message;
+  }

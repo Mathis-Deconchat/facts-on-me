@@ -1,10 +1,15 @@
 <div class="content">
+    <button mat-raised-button color="accent" id='btn-get-random' (click)="getRandom(); newClick()">Press me
+
+    </button>
+    <hr>
     <div class="card" *ngIf='fact' id='card-fact-unique'>
-        <p class="fact-font">{{fact?.content}}</p>
+        <p class='fact-timestamp'>{{fact?.timestamp}}</p>
+        <p class="fact-font"><span>"</span>{{fact?.content}}"<span style="font-size: 20px; font-style: italic"> -
+                Mathis</span></p>
     </div>
 
-    <button mat-raised-button color="accent" id='btn-get-random' (click)="getRandom(); newClick()">Press me
-        baby</button>
+
 
     <p>Compteur <span>{{clicks}}</span></p>
 </div>

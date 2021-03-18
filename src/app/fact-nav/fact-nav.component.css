@@ -1,0 +1,52 @@
+.nav{
+    background: #50B0E6;
+    backdrop-filter: blur(2rem);
+    box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.212);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 2rem;    
+    gap: 0px 0px;
+    grid-template-areas:
+    "nav . admin ."
+}
+.items-nav{
+    grid-area: nav;
+}
+
+.justify-end {
+    grid-area: admin;
+    display: flex;
+    justify-items: end;
+    justify-content: flex-end;    
+}
+
+.btn-admin{
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+
+
+
+ul li a{
+    text-decoration: none;
+    list-style: none;
+    display: block;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.212);
+    font-size: 1rem;
+}
+
+ul{
+    display: flex;
+    justify-content: flex-start;
+    list-style: none;
+}
+
+li{
+    margin: 1rem;    
+}
+

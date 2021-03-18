@@ -1,4 +1,5 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, OnDestroy } from '@angular/core';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { FactsFetcherService } from '../facts-fetcher.service';
 import { Fact } from '../fact';
 
@@ -11,10 +12,18 @@ import { Fact } from '../fact';
 })
 export class FactAdderComponent implements OnInit {
 
-  constructor(private FactsFetcherService: FactsFetcherService) { }
+  contentForm!: FormGroup;
+
+  constructor(
+    private FactsFetcherService: FactsFetcherService,
+  ) { }
 
   ngOnInit(): void {
+    this.contentForm = new FormGroup({
+      content: new FormControl(this.content, [Validators.required, Validators.minLength(4)])
+    })
   }
+
 
   LastPostid?: number;
   errorMessage?: string;
@@ -22,6 +31,7 @@ export class FactAdderComponent implements OnInit {
 
 
   postNewFact() {
+
     this.FactsFetcherService.postfact(this.content)
       .subscribe({
         next: data => {

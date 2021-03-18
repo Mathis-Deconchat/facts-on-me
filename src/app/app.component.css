@@ -23,6 +23,8 @@
   left: 10%;
 }
 
+
+
 main {
     font-family: "Poppins", sans-serif;
     min-height: 100vh;
@@ -34,7 +36,7 @@ main {
 
   .glass {
     background: white;
-    min-height: 50vh;
+    min-height: 60vh;
     width: 70%;
     background: linear-gradient(
       to right bottom,
